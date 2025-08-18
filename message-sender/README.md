@@ -50,3 +50,6 @@ python message-sender.py
 ```
 
 Will log out to console, at the end an audit file specified by `AUDIT_FILE` will be created.
+
+## Pre-check for connections
+Can run the `connection-check.py` script in the same manner with the same credentials and connections file as a check first to discover if any connection GUIDs cannot be found.
