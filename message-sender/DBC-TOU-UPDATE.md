@@ -22,6 +22,7 @@ INNER JOIN users u ON dbu.user_id = u.id
 INNER JOIN dc_connections dcn ON dcn.business_user_id = dbu.id
 WHERE dc.is_issued = true
 AND dc.is_revoked = false
+-- AND dc.date_of_issue < ('2025-07-24 15:16:00' AT TIME ZONE 'America/Los_Angeles')  -- can include a date range
 ORDER BY u.id, dcn.connection_id;
 ```
 
